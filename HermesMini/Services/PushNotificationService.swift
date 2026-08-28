@@ -197,7 +197,7 @@ final class PushNotificationService: ObservableObject {
         }
         return URL(string: "https://push.milim.dev")!
     }
-    private let bundleID = "com.milim.relay"
+    private let bundleID = "com.cmm.relay"
     private var registration: StoredRegistration?
     private var deviceToken: String?
     private var tokenContinuation: CheckedContinuation<String, Error>?

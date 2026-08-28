@@ -18,7 +18,7 @@ final class ChatViewportTrace {
     #if DEBUG
     private(set) var entries: [Entry] = []
     private let limit = 600
-    private let logger = Logger(subsystem: "com.milim.relay", category: "viewport")
+    private let logger = Logger(subsystem: "com.cmm.relay", category: "viewport")
 
     func log(_ text: String) {
         entries.append(Entry(time: CFAbsoluteTimeGetCurrent(), text: text))

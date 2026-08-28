@@ -7,7 +7,7 @@ import AVFAudio
 import Foundation
 import OSLog
 
-private let voiceAudioLogger = Logger(subsystem: "com.milim.relay", category: "VoiceAudio")
+private let voiceAudioLogger = Logger(subsystem: "com.cmm.relay", category: "VoiceAudio")
 
 @MainActor
 final class AVAudioCaptureService: NSObject, AudioCaptureService {

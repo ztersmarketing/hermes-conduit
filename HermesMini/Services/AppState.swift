@@ -13,9 +13,9 @@ import OSLog
 import UIKit
 import WebKit
 
-private let sessionCatalogLog = Logger(subsystem: "com.milim.conduit", category: "SessionCatalog")
-private let titleGenerationLog = Logger(subsystem: "com.milim.conduit", category: "TitleGeneration")
-private let sessionYoloLog = Logger(subsystem: "com.milim.conduit", category: "SessionYolo")
+private let sessionCatalogLog = Logger(subsystem: "com.cmm.conduit", category: "SessionCatalog")
+private let titleGenerationLog = Logger(subsystem: "com.cmm.conduit", category: "TitleGeneration")
+private let sessionYoloLog = Logger(subsystem: "com.cmm.conduit", category: "SessionYolo")
 
 typealias ChatResumeReconnectCancellation = @MainActor () -> Void
 typealias ChatResumeReconnectExecutor = @MainActor (ChatResumeSyncPurpose) async -> Void
@@ -8639,7 +8639,7 @@ enum KeychainHelper {
     private static let credentialsKey = "hermes-conduit.credentials.v1"
     private static let cloudflareAccessKey = "hermes-conduit.cloudflare-access.v1"
     private static let pushRegistrationKey = "hermes-conduit.push-registration.v1"
-    private static let service = "com.milim.conduit"
+    private static let service = "com.cmm.conduit"
 
     static func saveConnection(_ conn: HermesConnection) {
         guard let data = try? JSONEncoder().encode(conn) else { return }

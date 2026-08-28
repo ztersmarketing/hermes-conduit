@@ -383,7 +383,7 @@ private final class WebSocketOpenDelegate: NSObject, URLSessionWebSocketDelegate
 @MainActor
 final class HermesClient: ObservableObject {
 
-    private let logger = Logger(subsystem: "com.milim.conduit", category: "HermesClient")
+    private let logger = Logger(subsystem: "com.cmm.conduit", category: "HermesClient")
 
     // Published state for SwiftUI views
     @Published private(set) var isConnected = false
